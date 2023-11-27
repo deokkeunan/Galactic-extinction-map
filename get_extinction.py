@@ -1,5 +1,6 @@
 #   >>> from get_extinction import get_extinction
 #   >>> get_extinction(glon=166.4628, glat=-23.6146, dpc=135.8, get_rv=False)
+#   >>> get_extinction(glon=166.4628, glat=-23.6146, dpc=135.8, get_rv=True)
 
 import healpy as hp
 import numpy as np
@@ -9,18 +10,17 @@ import astropy.units as u
 from scipy.interpolate import interp1d
 
 def get_extinction(glon, glat, dpc, get_rv=False):
-    extinction_map = 'extinction_map.fits'
+    extinction_map = 'extinction_map'
     if get_rv:
-        extinction_map = 'extinction_map_rv.fits'
+        extinction_map = 'extinction_map2'
 
-    hdulist = fits.open(extinction_map)
-    ebv_avg = hdulist[0].data
-    ebv_avg_err = hdulist[1].data
-    dmn_min = hdulist[2].data
-    dmn_max = hdulist[3].data
+    ebv_avg = fits.open(extinction_map+'_ebv.fits')[0].data
+    ebv_avg_err = fits.open(extinction_map+'_ebverr.fits')[0].data
+    dmn_min = fits.open(extinction_map+'_mindmn.fits')[0].data
+    dmn_max = fits.open(extinction_map+'_maxdmn.fits')[0].data
 
     if get_rv:
-        rv_avg = hdulist[5].data
+        rv_avg = fits.open(extinction_map+'_rv.fits')[0].data
 
     coords = SkyCoord(l=glon, b=glat, frame='galactic', unit=(u.deg, u.deg))
 
