@@ -25,7 +25,7 @@ Python: see https://healpy.readthedocs.io/en/latest/install.html
 
      IDL> get_extinction, 166.4628, -23.6146, 135.8, /get_rv
 
-     E(B-V) = 0.026 +/- 0.007
+     E(B-V) = 0.026 +/- 0.006
      R(V) = 3.815
      Note that useful E(B-V) are found within  110 -  1956 pc.
 
