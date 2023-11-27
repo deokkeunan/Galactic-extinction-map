@@ -3,7 +3,9 @@
 Galactic extinction maps created by An, Beers, Chiti (ABC):
 
 Title: A Blueprint for the Milky Way’s Stellar Populations. V. Three-Dimensional Local Dust Extinction
+
 Authors: Deokkeun An, Timothy C. Beers, and Anirudh Chiti
+
 Abstract: Using a grid of empirically calibrated synthetic spectra developed in our previous study, we construct an all-sky three-dimensional extinction map from the large collection of low-resolution XP spectra in Gaia DR3. Along each line-of-sight, with an area ranging from 0.2 to 13.4 square degrees, we determine both the reddening and metallicity of main-sequence stars and model the foreground extinction up to ∼ 2 kpc from the Sun. Furthermore, we explore variations in the total-to-selective extinction ratio in our parameter search, and identify its mean systematic change across diverse cloud environments in both hemispheres. In regions outside the densest parts of the clouds, our parameter estimates are validated through comparisons with previous reddening maps, while a significant mismatch is found from other independent work based on the XP spectra. We also assess the accuracy of the XP spectra by applying our calibrated models, and confirm an increasing trend of flux over-estimation at shorter wavelengths below 400 nm.
 
 Example scripts in both IDL and Python are provided below to obtain the mean E(B-V) for a specified sightline and distance.
