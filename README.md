@@ -1,4 +1,4 @@
-# extinction-cube
+# Galactic-extinction-map
 
 Galactic extinction maps created by An, Beers, Chiti (2024), submitted to the ApJS (ABC).
 
