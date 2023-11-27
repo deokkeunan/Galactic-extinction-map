@@ -1,5 +1,7 @@
 # extinction-cube
 
+Galactic extinction maps created by An, Beers, Chiti (2024), submitted to the ApJS (ABC).
+
 Example scripts in both IDL and Python are provided below to obtain the mean E(B-V) for a specified sightline and distance.
 
 There are two alternative extinction maps provided. The first ("extinction_map.fits") is derived using a fixed value for the total-to-selective extinction ratio, R(V), set at the standard value (=3.1). The second map ("extinction_map_rv.fits") is based on a scenario where R(V) varies during the parameter search. Refer to Sections 4 and 6 in ABC for detailed descriptions of each case.
