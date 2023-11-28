@@ -10,7 +10,7 @@ Abstract: Using a grid of empirically calibrated synthetic spectra developed in 
 
 Example scripts in both IDL and Python are provided below to obtain the mean E(B-V) for a specified sightline and distance.
 
-There are two alternative extinction maps provided. The first ("extinction_map_*.fits") is derived using a fixed value for the total-to-selective extinction ratio, R(V), set at the standard value (=3.1). The second map ("extinction_map2_*.fits") is based on a scenario where R(V) varies during the parameter search. Refer to Sections 4 and 6 in ABC for detailed descriptions of each case.
+There are two alternative extinction maps provided. The first ("extinction_map") is derived using a fixed value for the total-to-selective extinction ratio, R(V), set at the standard value (=3.1). The second map ("extinction_map2") is based on a scenario where R(V) varies during the parameter search. Refer to Sections 4 and 6 in ABC for detailed descriptions of each case.
 
 In order to run these scripts, you may need to install the HEALPix subroutines from the following webpages:
 
