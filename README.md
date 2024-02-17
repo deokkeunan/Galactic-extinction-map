@@ -15,6 +15,7 @@ There are two alternative extinction maps provided. The first ("extinction_map")
 In order to run these scripts, you may need to install the HEALPix subroutines from the following webpages:
 
 IDL: see https://healpix.sourceforge.io/doc/html/install.htm
+
 Python: see https://healpy.readthedocs.io/en/latest/install.html
 
 1) Example script in IDL
