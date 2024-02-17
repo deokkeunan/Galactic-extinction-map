@@ -46,12 +46,12 @@ pro get_extinction,glon,glat,dpc,GET_RV=GET_RV
    EXTINCTION_MAP='extinction_map'
    if keyword_set(GET_RV) then EXTINCTION_MAP='extinction_map2'
 
-   ebv_avg=mrdfits(EXTINCTION_MAP+'_ebv.fits',0,head0)          ;array of E(B-V)
-   ebv_avg_err=mrdfits(EXTINCTION_MAP+'_ebverr.fits',0,head1)   ;array of E(B-V) uncertainties
-   dmn_min=mrdfits(EXTINCTION_MAP+'_mindmn.fits',0,head2)       ;minimum valid distance modulus
-   dmn_max=mrdfits(EXTINCTION_MAP+'_maxdmn.fits',0,head3)       ;maximum valid distance modulus
+   ebv_avg=mrdfits(EXTINCTION_MAP+'_ebv.fits.gz',0,head0)          ;array of E(B-V)
+   ebv_avg_err=mrdfits(EXTINCTION_MAP+'_ebverr.fits.gz',0,head1)   ;array of E(B-V) uncertainties
+   dmn_min=mrdfits(EXTINCTION_MAP+'_mindmn.fits.gz',0,head2)       ;minimum valid distance modulus
+   dmn_max=mrdfits(EXTINCTION_MAP+'_maxdmn.fits.gz',0,head3)       ;maximum valid distance modulus
    if keyword_set(GET_RV) then $
-   rv_avg=mrdfits(EXTINCTION_MAP+'_rv.fits',0,head5)            ;total-to-selective extinction
+   rv_avg=mrdfits(EXTINCTION_MAP+'_rv.fits.gz',0,head5)            ;total-to-selective extinction
 
    ang2pix_nest,2^7,(90.0-glat)/!RADEG,glon/!RADEG,pix
 
