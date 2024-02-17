@@ -14,13 +14,13 @@ def get_extinction(glon, glat, dpc, get_rv=False):
     if get_rv:
         extinction_map = 'extinction_map2'
 
-    ebv_avg = fits.open(extinction_map+'_ebv.fits')[0].data
-    ebv_avg_err = fits.open(extinction_map+'_ebverr.fits')[0].data
-    dmn_min = fits.open(extinction_map+'_mindmn.fits')[0].data
-    dmn_max = fits.open(extinction_map+'_maxdmn.fits')[0].data
+    ebv_avg = fits.open(extinction_map+'_ebv.fits.gz')[0].data
+    ebv_avg_err = fits.open(extinction_map+'_ebverr.fits.gz')[0].data
+    dmn_min = fits.open(extinction_map+'_mindmn.fits.gz')[0].data
+    dmn_max = fits.open(extinction_map+'_maxdmn.fits.gz')[0].data
 
     if get_rv:
-        rv_avg = fits.open(extinction_map+'_rv.fits')[0].data
+        rv_avg = fits.open(extinction_map+'_rv.fits.gz')[0].data
 
     coords = SkyCoord(l=glon, b=glat, frame='galactic', unit=(u.deg, u.deg))
 
