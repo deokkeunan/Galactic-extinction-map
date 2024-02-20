@@ -26,16 +26,16 @@ Python: see https://healpy.readthedocs.io/en/latest/install.html
 
      IDL> get_extinction, 166.4628, -23.6146, 135.8
 
-     E(B-V) = 0.030 +/- 0.009
-     Note that useful E(B-V) are found within  110 -  2008 pc.
+     E(B-V) = 0.029 +/- 0.009
+     Note that useful E(B-V) are found within   97 -  2483 pc.
 
 (2) Repeat the computation outlined above, this time utilizing an alternative extinction map that incorporates a variation in R(V):
 
      IDL> get_extinction, 166.4628, -23.6146, 135.8, /get_rv
 
-     E(B-V) = 0.026 +/- 0.006
-     R(V) = 3.815
-     Note that useful E(B-V) are found within  110 -  1956 pc.
+     E(B-V) = 0.031 +/- 0.008
+     R(V) = 3.866
+     Note that useful E(B-V) are found within   97 -  2403 pc.
 
 2) Example script in Python
 
@@ -44,14 +44,14 @@ Python: see https://healpy.readthedocs.io/en/latest/install.html
      >>> from get_extinction import get_extinction
      >>> get_extinction(glon=166.4628, glat=-23.6146, dpc=135.8)
 
-     E(B-V) = 0.030 +/- 0.009
-     Note that useful E(B-V) is found within 110 - 2008 pc.
+     E(B-V) = 0.029 +/- 0.009
+     Note that useful E(B-V) is found within 97 - 2483 pc.
 
 (2) Repeat the computation outlined above, this time utilizing an alternative extinction map that incorporates a variation in R(V):
 
      >>> from get_extinction import get_extinction
      >>> get_extinction(glon=166.4628, glat=-23.6146, dpc=135.8, get_rv=True)
      
-     E(B-V) = 0.026 +/- 0.006
-     R(V) = 3.815
-     Note that useful E(B-V) is found within 110 - 1956 pc.
+     E(B-V) = 0.031 +/- 0.008
+     R(V) = 3.866
+     Note that useful E(B-V) is found within 97 - 2403 pc.
