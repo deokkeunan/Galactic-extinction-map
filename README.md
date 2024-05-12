@@ -49,3 +49,6 @@ Python: see https://healpy.readthedocs.io/en/latest/install.html
      E(B-V) = 0.031 +/- 0.008
      R(V) = 3.866
      Note that useful E(B-V) is found within 97 - 2403 pc.
+
+
+![crossview](https://github.com/deokkeunan/Galactic-extinction-map/assets/106642228/2f816969-acfe-4dd5-b441-a9748b08209d)
