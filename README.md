@@ -1,8 +1,8 @@
 # Galactic-extinction-map
 
-Galactic extinction maps created by An, Beers, Chiti (2024, ApJS in press):
+Galactic extinction maps created by An, Beers, Chiti (2024, ApJS, 270, 20):
 
-https://arxiv.org/abs/2404.14626
+https://iopscience.iop.org/article/10.3847/1538-4365/ad3641
 
 Example scripts in both IDL and Python are provided below to obtain the mean E(B-V) for a specified sightline and distance.
 
