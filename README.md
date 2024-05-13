@@ -50,6 +50,6 @@ Python: see https://healpy.readthedocs.io/en/latest/install.html
      R(V) = 3.866
      Note that useful E(B-V) is found within 97 - 2403 pc.
 
-The following plots depict a cross-sectional view of Galactic dust as delineated by our study, with (x, y, z) denoting heliocentric distance in the Galactic cylindrical coordinate system. In this system, x increases toward the Galactic center, y increases in the direction of solar rotation, and z increases toward the northern Galactic pole.
+The following plots depict a cross-sectional view of Galactic dust as delineated by our study, with (x, y, z) denoting heliocentric distance in the Galactic cylindrical coordinate system. In this system, x increases toward the Galactic center, y increases in the direction of solar rotation, and z increases toward the northern Galactic pole. Dashed lines indicate approximate locations for the Local and the Carina-Sagittarius arms.
 
 ![crossview](https://github.com/deokkeunan/Galactic-extinction-map/assets/106642228/2f816969-acfe-4dd5-b441-a9748b08209d)
